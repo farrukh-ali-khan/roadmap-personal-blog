@@ -1,0 +1,119 @@
+/* Admin Header (same style as public header, can reuse styles) */
+.admin-header {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Admin Layout */
+.admin-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  flex: 0 0 300px;
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.admin-article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-article-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.action-links button {
+  margin-right: 1rem;
+  background: transparent;
+  border: none;
+  color: #0070f3;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.action-links button:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.admin-content {
+  flex: 1;
+}
+
+.admin-content h2 {
+  margin-bottom: 1rem;
+}
+
+/* Form Styles */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.admin-form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.admin-form input,
+.admin-form textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.admin-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: #0070f3;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background-color: #005bb5;
+}
+
+/* Improved "+ Add" Button */
+.add-button {
+  background-color: #0070f3;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .admin-sidebar {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+}
