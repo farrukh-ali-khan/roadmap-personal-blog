@@ -1,5 +1,3 @@
-// components/Header.tsx
-
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -30,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ isAdmin = false }) => {
         <div className="nav-links">
           {isAdmin ? (
             <>
-              <button onClick={() => router.push("/")}>Home</button>
+              <button onClick={() => router.push("/admin")}>Dashboard</button>
               <button onClick={() => router.push("/api/auth/logout")}>
                 Logout
               </button>

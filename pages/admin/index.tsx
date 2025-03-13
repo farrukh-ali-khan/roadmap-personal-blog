@@ -62,7 +62,6 @@ export default function AdminDashboard({ articles }: AdminProps) {
           </ul>
         </div>
         <div className="admin-content">
-          <h2>Dashboard</h2>
           <button
             className="add-button"
             onClick={() => router.push("/admin/new")}

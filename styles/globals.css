@@ -171,3 +171,27 @@ body {
   color: red;
   font-size: 0.9rem;
 }
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-header .container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.site-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+}

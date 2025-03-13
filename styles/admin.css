@@ -15,7 +15,7 @@
 }
 
 .admin-sidebar {
-  flex: 0 0 300px;
+  width: 85%;
 }
 
 .admin-sidebar h2 {
@@ -117,3 +117,4 @@
     padding-bottom: 1rem;
   }
 }
+
